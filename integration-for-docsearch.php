@@ -47,8 +47,12 @@ if ( ! defined( 'IFD_PLUGIN_URL' ) ) {
 	define( 'IFD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
+require_once IFD_PLUGIN_DIR . 'inc/class-ifd-options.php';
+
 function ifd_init() {
 	// TODO: Load the plugin core functionalities.
+
+	new \IFD\Inc\Ifd_options();
 }
 
 ifd_init();
