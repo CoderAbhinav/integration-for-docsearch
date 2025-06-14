@@ -16,5 +16,8 @@ class Plugin {
 	/**
 	 * Construct method.
 	 */
-	protected function __construct() {}
+	protected function __construct() {
+		Settings::get_instance();
+		Page::get_instance();
+	}
 }
