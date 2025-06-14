@@ -47,8 +47,19 @@ if ( ! defined( 'IFD_PLUGIN_URL' ) ) {
 	define( 'IFD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
+/**
+ * Loading autoloader, and custom functions.
+ */
+require_once IFD_PLUGIN_DIR . 'inc/helpers/autoloader.php';
+require_once IFD_PLUGIN_DIR . 'inc/helpers/custom-functions.php';
+
+/**
+ * Initialize the plugin.
+ *
+ * @return void
+ */
 function ifd_init() {
-	// TODO: Load the plugin core functionalities.
+	\IFD\Inc\Plugin::get_instance();
 }
 
 ifd_init();
