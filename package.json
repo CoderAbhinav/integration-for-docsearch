@@ -1,0 +1,31 @@
+{
+  "name": "integration-for-docsearch",
+  "version": "1.0.0",
+  "description": "Easily integrate Algolia DocSearch with your WordPress site.",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "wp-scripts build --config ./webpack.config.js",
+		"start:js": "wp-scripts start --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderAbhinav/integration-for-docsearch.git"
+  },
+  "keywords": [
+    "docsearch",
+    "algolia",
+    "wordpress"
+  ],
+  "author": "Abhinav Belhekar",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/CoderAbhinav/integration-for-docsearch/issues"
+  },
+  "homepage": "https://github.com/CoderAbhinav/integration-for-docsearch#readme",
+  "dependencies": {
+    "@docsearch/js": "^3.9.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "@wordpress/scripts": "^30.18.0",
+    "css-minimizer-webpack-plugin": "^7.0.2"
+  }
+}
